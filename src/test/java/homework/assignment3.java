@@ -44,7 +44,7 @@ public class assignment3 {
         Assert.assertEquals(actual, expected);
 
         Assert.assertEquals(driver.findElement(By.cssSelector("input[aria-label='Min Year value']")).getAttribute("value"), "2012");
-        Assert.assertEquals(driver.findElement(By.cssSelector("input[aria-label='Max Year value']")).getAttribute("value"), "2023");
+        Assert.assertEquals(driver.findElement(By.cssSelector("input[aria-label='Max Year value']")).getAttribute("value"), "2024");
 
         String actualModel = driver.findElement(By.xpath("//select[@aria-label='Search by Model']")).getText();
         String expectedModel = "Add Model\nModel 3\nModel S\nModel X\nModel Y\nCybertruck\nRoadster";
